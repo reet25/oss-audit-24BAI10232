@@ -10,7 +10,7 @@ read -p "3. Name one thing you would build and share freely: " BUILD
 DATE=$(date '+%d %B %Y')
 OUTPUT="manifesto_$(whoami).txt"
 # write the paragraph using these variables
-echo "Linux is a very powerful $TOOL. It gives the $FREEDOM to use, modify, and distribute the source code for free. I would build and share 
+echo "$TOOL gives the $FREEDOM to use, modify, and distribute the source code for free. I would build and share 
 $BUILD using this as a base. Today is $DATE." > $OUTPUT
 #display the output
 echo "Manifesto saved to $OUTPUT"

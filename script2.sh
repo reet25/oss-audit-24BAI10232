@@ -3,7 +3,7 @@
 #check if a specific package is installed and display its version maintainer and description
 PACKAGE="bash"
 #dpkg -l lists the installed packages while grep -q checks if it exists
-if dpkg -l | grep -q "$PACKAGE"; then
+if dpkg -l | grep -w "$PACKAGE"; then
     echo "$PACKAGE is installed."
     dpkg -s $PACKAGE | grep -E 'Version|Maintainer|Description'
 else

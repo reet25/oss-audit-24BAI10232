@@ -1,6 +1,6 @@
 # Linux Scripts
 
-This repository contains 5 basic Linux shell scripts created using Ubuntu in Windows Subsystem for Linux (WSL). These scripts
+This repository contains 5 basic Linux shell scripts created using Ubuntu in Windows Subsystem for Linux (WSL). These scripts 
 demonstrate fundamental Linux commands and basic shell scripting concepts.
 
 ## Scripts

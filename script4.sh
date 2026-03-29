@@ -1,3 +1,4 @@
+
 #!/bin/bash
 # Script 4: Log File Analyzer
 # Usage: ./log_analyzer.sh /var/log/messages
@@ -16,11 +17,12 @@ while IFS= read -r LINE; do
  fi
 done < "$LOGFILE"
 echo "Keyword '$KEYWORD' found $COUNT times in $LOGFILE"
-#check if file is empty
+#check if file is empty and retry
 if [ ! -s "$LOGFILE" ]; then
-   echo "File is empty"
-   exit 1
+    echo "File is empty. Retrying in 3 seconds."
+    sleep 3
 fi
 #shows last 5 matching lines
 echo "Last 5 matching lines are - "
 grep -i "$KEYWORD" "$LOGFILE" | tail -n 5
+

@@ -16,7 +16,7 @@ for DIR in "${DIRS[@]}"; do
  fi
 done
 #checking configuration directory exists
-CONFIG_DIRECTORY="/etc"
+CONFIG_DIRECTORY="/lib/modules"
 if [ -d "$CONFIG_DIRECTORY" ]; then
    #display its permissions
    PERMS=$(ls -ld $CONFIG_DIRECTORY | awk '{print $1, $3, $4}')

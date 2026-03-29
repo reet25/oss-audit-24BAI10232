@@ -1,8 +1,9 @@
 #!/bin/bash
 # Script 1: System Identity Report
+# Author: Reet Dubey | Course: Open Source Software
 #set the variables
 STUDENT_NAME="Reet Dubey" #username
-SOFTWARE_CHOICE="Linux" #software of choice
+SOFTWARE_CHOICE="Linux kernel" #software of choice
 KERNEL=$(uname -r)  #kernel version
 USER_NAME=$(whoami)  #username logged in
 HOME_DIRECTORY=$HOME #home directory
