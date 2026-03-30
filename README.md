@@ -27,6 +27,13 @@ Takes user input and generates a personalized open-source philosophy statement s
 
 ---
 
+## Dependencies:
+- bash
+- coreutils
+- grep
+- awk
+- WSL (Ubuntu)
+
 ## How to Run
 
 1. Open terminal in Linux / WSL  
